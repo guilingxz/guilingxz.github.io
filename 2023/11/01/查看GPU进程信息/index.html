@@ -13,24 +13,22 @@
     
     <!--- Seo Part-->
     
-    <link rel="canonical" href="http://example.com/2023/10/23/test/hello/"/>
+    <link rel="canonical" href="http://example.com/2023/11/01/查看gpu进程信息/"/>
     <meta name="robots" content="index,follow">
     <meta name="googlebot" content="index,follow">
     <meta name="revisit-after" content="1 days">
     
-        <meta name="description" content="Welcome to Hexo ! This is your very first post. Check documentation  for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting  or you can ask me on GitHub .">
+        <meta name="description" content="Linux命令1. 查看GPU内存使用情况1nvidia-smi  生成下面内容 123456789101112131415161718192021222324Wed Nov  1 16:25:24 2023       +-----------------------------------------------------------------------------+| NVIDIA-S">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://example.com/2023/10/23/test/hello/index.html">
+<meta property="og:title" content="查看GPU进程信息以及指定GPU运行">
+<meta property="og:url" content="http://example.com/2023/11/01/%E6%9F%A5%E7%9C%8BGPU%E8%BF%9B%E7%A8%8B%E4%BF%A1%E6%81%AF/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="Welcome to Hexo ! This is your very first post. Check documentation  for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting  or you can ask me on GitHub .">
+<meta property="og:description" content="Linux命令1. 查看GPU内存使用情况1nvidia-smi  生成下面内容 123456789101112131415161718192021222324Wed Nov  1 16:25:24 2023       +-----------------------------------------------------------------------------+| NVIDIA-S">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="c:\Users\Administrator\Pictures\55c52cd1gy1hhyiw2key1j235l23q1l0.jpg">
-<meta property="article:published_time" content="2023-10-23T01:55:11.210Z">
-<meta property="article:modified_time" content="2023-10-23T05:26:22.681Z">
+<meta property="article:published_time" content="2023-11-01T08:37:24.533Z">
+<meta property="article:modified_time" content="2023-11-01T10:24:13.753Z">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="c:\Users\Administrator\Pictures\55c52cd1gy1hhyiw2key1j235l23q1l0.jpg">
     
     
     <!--- Icon Part-->
@@ -42,7 +40,7 @@
     
     <title>
         
-            Hello World -
+            查看GPU进程信息以及指定GPU运行 -
         
         GuiLing_Blog
     </title>
@@ -210,7 +208,7 @@
 
         <div class="article-title">
             
-                <h1 class="article-title-regular">Hello World</h1>
+                <h1 class="article-title-regular">查看GPU进程信息以及指定GPU运行</h1>
             
             </div>
             
@@ -232,15 +230,15 @@
                         <div class="article-meta-info">
     <span class="article-date article-meta-item">
         <i class="fa-regular fa-pen-fancy"></i>&nbsp;
-        <span class="desktop">2023-10-23 09:55:11</span>
-        <span class="mobile">2023-10-23 09:55:11</span>
+        <span class="desktop">2023-11-01 16:37:24</span>
+        <span class="mobile">2023-11-01 16:37:24</span>
         <span class="hover-info">Created</span>
     </span>
     
         <span class="article-date article-meta-item">
             <i class="fa-regular fa-wrench"></i>&nbsp;
-            <span class="desktop">2023-10-23 13:26:22</span>
-            <span class="mobile">2023-10-23 13:26:22</span>
+            <span class="desktop">2023-11-01 18:24:13</span>
+            <span class="mobile">2023-11-01 18:24:13</span>
             <span class="hover-info">Updated</span>
         </span>
     
@@ -267,52 +265,27 @@
 
 
         <div class="article-content markdown-body">
-            <p>Welcome to <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/" >Hexo <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>! This is your very first post. Check <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/" >documentation <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html" >troubleshooting <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a> or you can ask me on <a class="link"   target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues" >GitHub <i class="fa-regular fa-arrow-up-right-from-square fa-sm"></i></a>.</p>
-<hr>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="2级"><a href="#2级" class="headerlink" title="2级"></a>2级</h2><div class="highlight-container" data-rel="Python"><figure class="iseeu highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>（“hello world！”）</span><br></pre></td></tr></table></figure></div>
+            <h1 id="Linux命令"><a href="#Linux命令" class="headerlink" title="Linux命令"></a>Linux命令</h1><h2 id="1-查看GPU内存使用情况"><a href="#1-查看GPU内存使用情况" class="headerlink" title="1. 查看GPU内存使用情况"></a>1. 查看GPU内存使用情况</h2><div class="highlight-container" data-rel="Sh"><figure class="iseeu highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nvidia-smi</span><br></pre></td></tr></table></figure></div>
 
-<p><strong>解释</strong>  你好</p>
-<h1 id="你好"><a href="#你好" class="headerlink" title="你好"></a>你好</h1><p>#ji</p>
-<h1 id="你好-1"><a href="#你好-1" class="headerlink" title="你好"></a>你好</h1><h2 id="你好-2"><a href="#你好-2" class="headerlink" title="你好"></a>你好</h2><p>》 你好<img  
-                     lazyload
-                     src="/images/loading.svg"
-                     data-src="C:\Users\Administrator\Pictures\55c52cd1gy1hhyiw2key1j235l23q1l0.jpg"
-                       
-                ></p>
-<blockquote>
-<p><strong>加粗</strong></p>
-<ul>
-<li>yyy<ol>
-<li>你好</li>
-</ol>
-</li>
-</ul>
-</blockquote>
-<p>HJKHKJ<code>你好AO</code>HJKHJK</p>
-<table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody><tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-</tr>
-</tbody></table>
+<p>生成下面内容</p>
+<div class="highlight-container" data-rel="Sh"><figure class="iseeu highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">Wed Nov  1 16:25:24 2023       </span><br><span class="line">+-----------------------------------------------------------------------------+</span><br><span class="line">| NVIDIA-SMI 440.33.01    Driver Version: 440.33.01    CUDA Version: 10.2     |</span><br><span class="line">|-------------------------------+----------------------+----------------------+</span><br><span class="line">| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |</span><br><span class="line">| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |</span><br><span class="line">|===============================+======================+======================|</span><br><span class="line">|   0  Tesla V100-PCIE...  Off  | 00000000:3B:00.0 Off |                    0 |</span><br><span class="line">| N/A   32C    P0    44W / 250W |   1277MiB / 16160MiB |     25%      Default |</span><br><span class="line">+-------------------------------+----------------------+----------------------+</span><br><span class="line">|   1  Tesla V100-PCIE...  Off  | 00000000:86:00.0 Off |                    0 |</span><br><span class="line">| N/A   28C    P0    24W / 250W |     12MiB / 16160MiB |      0%      Default |</span><br><span class="line">+-------------------------------+----------------------+----------------------+</span><br><span class="line">|   2  Tesla V100-PCIE...  Off  | 00000000:AF:00.0 Off |                    0 |</span><br><span class="line">| N/A   66C    P0   245W / 250W |  14807MiB / 16160MiB |     95%      Default |</span><br><span class="line">+-------------------------------+----------------------+----------------------+</span><br><span class="line">                                                                               </span><br><span class="line">+-----------------------------------------------------------------------------+</span><br><span class="line">| Processes:                                                       GPU Memory |</span><br><span class="line">|  GPU       PID   Type   Process name                             Usage      |</span><br><span class="line">|=============================================================================|</span><br><span class="line">|    0     10923      C   python                                      1265MiB |</span><br><span class="line">|    2     69271      C   python                                     14795MiB |</span><br><span class="line">+-----------------------------------------------------------------------------+</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="2-查看文件位置"><a href="#2-查看文件位置" class="headerlink" title="2.查看文件位置"></a>2.查看文件位置</h2><p>根据PID查看是谁在用GPU</p>
+<div class="highlight-container" data-rel="Sh"><figure class="iseeu highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">lsof -p  10923</span><br></pre></td></tr></table></figure></div>
+
+<p>输出如下</p>
+<div class="highlight-container" data-rel="Sh"><figure class="iseeu highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">COMMAND   PID  USER   FD   TYPE             DEVICE  SIZE/OFF       NODE NAME</span><br><span class="line">python  10923 user1  cwd    DIR               0,46      4096   85475461 /home/user1/projects/guilingxz/project/VulCNN (10.0.0.1:/home/user1/projects)</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="3-kill进程"><a href="#3-kill进程" class="headerlink" title="3. kill进程"></a>3. kill进程</h2><p>① 无条件终止进程</p>
+<div class="highlight-container" data-rel="Sh"><figure class="iseeu highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">kill</span> -9 PID</span><br></pre></td></tr></table></figure></div>
+
+<p>②告知进程自行退出</p>
+<div class="highlight-container" data-rel="Sh"><figure class="iseeu highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">kill</span> -15 PID</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="4-指定GPU运行"><a href="#4-指定GPU运行" class="headerlink" title="4. 指定GPU运行"></a>4. 指定GPU运行</h2><div class="highlight-container" data-rel="Sh"><figure class="iseeu highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">CUDA_VISIBLE_DEVICES=1 python XXXX.py .....</span><br></pre></td></tr></table></figure></div>
+
+
+
 
         </div>
 
@@ -320,18 +293,18 @@
             <div class="post-copyright-info">
                 <div class="article-copyright-info-container">
     <ul>
-        <li><strong>Title:</strong> Hello World</li>
+        <li><strong>Title:</strong> 查看GPU进程信息以及指定GPU运行</li>
         <li><strong>Author:</strong> 桂凌</li>
         <li><strong>Created at
-                :</strong> 2023-10-23 09:55:11</li>
+                :</strong> 2023-11-01 16:37:24</li>
         
             <li>
                 <strong>Updated at
-                    :</strong> 2023-10-23 13:26:22
+                    :</strong> 2023-11-01 18:24:13
             </li>
         
         <li>
-            <strong>Link:</strong> https://guilingxz.github.io/2023/10/23/test/hello/
+            <strong>Link:</strong> https://guilingxz.github.io/2023/11/01/查看GPU进程信息/
         </li>
         <li>
             <strong>
@@ -355,29 +328,14 @@
         
             <div class="article-nav">
                 
-                    <div class="article-prev">
-                        <a class="prev"
-                        rel="prev"
-                        href="/2023/10/29/%E6%A1%82%E5%87%8C-2315363137/"
-                        >
-                            <span class="left arrow-icon flex justify-center items-center">
-                                <i class="fa-solid fa-chevron-left"></i>
-                            </span>
-                            <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">漏洞检测</span>
-                                <span class="post-nav-item">Prev posts</span>
-                            </span>
-                        </a>
-                    </div>
-                
                 
                     <div class="article-next">
                         <a class="next"
                         rel="next"
-                        href="/2023/09/06/hello-world/"
+                        href="/2023/10/29/readme/"
                         >
                             <span class="title flex justify-center items-center">
-                                <span class="post-nav-title-item">Hello World</span>
+                                <span class="post-nav-title-item">Hexo发布博客Readme</span>
                                 <span class="post-nav-item">Next posts</span>
                             </span>
                             <span class="right arrow-icon flex justify-center items-center">
@@ -442,8 +400,8 @@
             <div class="post-toc-wrap">
     <div class="post-toc">
         <div class="toc-title">On this page</div>
-        <div class="page-title">Hello World</div>
-        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%80%E7%BA%A7%E6%A0%87%E9%A2%98"><span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#2%E7%BA%A7"><span class="nav-text">2级</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%A0%E5%A5%BD"><span class="nav-text">你好</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%A0%E5%A5%BD-1"><span class="nav-text">你好</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%A0%E5%A5%BD-2"><span class="nav-text">你好</span></a></li></ol></li></ol>
+        <div class="page-title">查看GPU进程信息以及指定GPU运行</div>
+        <ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Linux%E5%91%BD%E4%BB%A4"><span class="nav-text">Linux命令</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-%E6%9F%A5%E7%9C%8BGPU%E5%86%85%E5%AD%98%E4%BD%BF%E7%94%A8%E6%83%85%E5%86%B5"><span class="nav-text">1. 查看GPU内存使用情况</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-%E6%9F%A5%E7%9C%8B%E6%96%87%E4%BB%B6%E4%BD%8D%E7%BD%AE"><span class="nav-text">2.查看文件位置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-kill%E8%BF%9B%E7%A8%8B"><span class="nav-text">3. kill进程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-%E6%8C%87%E5%AE%9AGPU%E8%BF%90%E8%A1%8C"><span class="nav-text">4. 指定GPU运行</span></a></li></ol></li></ol>
 
     </div>
 </div>
